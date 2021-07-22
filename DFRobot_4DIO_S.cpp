@@ -31,12 +31,14 @@ uint16_t DFRobot_4DIO_S::readVid()
 
 uint16_t DFRobot_4DIO_S::setAddr(uint16_t addr)
 {
-  return writeHoldingRegister(_addr,REG_4DIO_DEVICE_ADRR,&addr,2);
+  uint8_t data[2] = {addr>>8, addr & 0xff };
+  return writeHoldingRegister(_addr,REG_4DIO_DEVICE_ADRR,&data,2);
 }
 
 uint16_t DFRobot_4DIO_S::setBaudrRate(uint16_t rate)
 {
-  return writeHoldingRegister(_addr,REG_4DIO_UART_CONFIG1,&rate,2);
+  uint8_t data[2] = {rate>>8, rate & 0xff };
+  return writeHoldingRegister(_addr,REG_4DIO_UART_CONFIG1,&data,2);
 }
 
 bool DFRobot_4DIO_S::setDio(eDio_t number)
