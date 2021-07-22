@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map For DFRobot_4DIO_S
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+
+DFRobot_4DIO_S	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+readPid	KEYWORD2
+readVid	KEYWORD2
+setAddr	KEYWORD2
+setBaudrRate	KEYWORD2
+resetDio	KEYWORD2
+configDio	KEYWORD2
+readDio	KEYWORD2
+readInt	KEYWORD2
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+eBeep	LITERAL1
+eDio_1	LITERAL1
+eDio_2	LITERAL1
+eDio_3	LITERAL1
+eDio_4	LITERAL1
+
+eInt_1	LITERAL1
+eInt_2	LITERAL1
+eInt_3	LITERAL1
+eInt_4	LITERAL1
