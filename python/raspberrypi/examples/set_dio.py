@@ -25,10 +25,10 @@ dio = DFRobot_4DIO_S(ADRESS,19200)
     
     
 #获取PID
-print('PID = %d',dio.read_pid())
+print('PID = %d'%dio.read_pid())
 time.sleep(0.01)
 #获取VID
-print('PID = %d',dio.read_vid())
+print('PID = %d'%dio.read_vid())
 
 #更改设置设备(重启后生效)
 dio.set_addr(0x0e);

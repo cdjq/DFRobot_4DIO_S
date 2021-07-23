@@ -53,7 +53,7 @@ bool DFRobot_4DIO_S::configDio(bool dio1,bool dio2,bool dio3, bool dio4)
    data = data | ((uint8_t)dio2 << 1);
    data = data | ((uint8_t)dio3 << 2);
    data = data | ((uint8_t)dio4 << 3);
-   Serial.println(data);
+   //Serial.println(data);
    return writeCoilsRegister(_addr,1,4,&data,1);
 
 }
